@@ -9,7 +9,6 @@ Spark Data Reconciliation is a tool reconcile two datasets.
 /usr/lib/spark/bin/spark-submit --deploy-mode cluster --driver-memory 30G --executor-memory 33G --executor-cores 5 --name Data_Reconciliation --class com.github.tharun.datareconciler.Pipeline {JAR_PATH} --qualityCheckType reconciler --oldTable {PATH_OF_OLD_DATA} --newTable {PATH_OF_NEW_DATA} --outputPath {PATH_OF_OUTPUT_DATA} --primaryKey {COMMA_SEPARATED_PRIMARY_KEYS}
 
 # Sample Output
-+--------------------------------------------------------------------------+---------------------+---------------------+--------------------------+
 |field_name                                                                |matching_record_count|mismatch_record_count|matching_record_percentage|
 |:------------------------------------------------------------------------:|:-------------------:|:-------------------:|:------------------------:|
 |student_id                                                                |1000                 |0                    |100.0                     |
@@ -25,4 +24,3 @@ Spark Data Reconciliation is a tool reconcile two datasets.
 |new_records                                                               |30                   |0                    |2.9                       |
 |{old_file_path}                                                           |1010                 |0                    |0.0                       |
 |{new_file_path}                                                           |1030                 |0                    |0.0                       |
-+--------------------------------------------------------------------------+---------------------+---------------------+--------------------------+
